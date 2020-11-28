@@ -6,6 +6,7 @@
     <title>Студия</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
@@ -33,9 +34,10 @@
             <a class="button-primary" href="#">Заказать услугу</a>
         </section>
 
-    
-    <section>
-        <h2 class="tittles">Наши преимущества</h2>
+    <!-- <h2>Наши преимущества</h2> -->
+    <section class="section">
+        <div class="container">
+
         <ul>
             <li> 
                 <h3 class="features-tittle">Внимание к деталям</h3>
@@ -54,9 +56,12 @@
                 <p class="text">Значимость этих проблем настолько очевидна,что реализация плановых заданий </p>
             </li>
         </ul>
+        </div>
     </section>
 
-    <section>
+    <section class="section">
+        <div class="container">
+        
     <!--Я думаю что тут наверное надо бы еще к картинкам добавить ссылку на переход, вряд ли посмотрев на картинки можно понять чем мы занимаемся-->
         <h2 class="tittles">Чем мы занимаемся</h2>
         <ul>
@@ -64,35 +69,36 @@
             <li><img src="./images/img2.jpg" alt="Что-то с телефоном" height="274"></li>
             <li><img src="./images/img3.jpg" alt="Что-то с планшетом" height="274"></li>
         </ul>
-
-
+        </div>
     </section>
 
-    <section class="team">
+    <section class="team section">
+        <div class="container">
         <h2 class="tittles">Наша команда</h2>
 
-        <ul>
+         <ul>
             <li>
-                <img src="./images/лицо1.jpg" alt="Игорёк" height="260">
+                <img class="team-photos" src="./images/лицо1.jpg" alt="Игорёк" height="260">
                 <h3 class="features-tittle">Игорь Демьяненко</h3>
                 <p class="text-team">Product Designer</p>
             </li>
             <li>
-                <img src="./images/лицо2.jpg" alt="Олька" height="260">
+                <img class="team-photos" src="./images/лицо2.jpg" alt="Олька" height="260">
                 <h3 class="features-tittle">Ольга Репина</h3>
                 <p class="text-team">Frontend Devoloper</p>
             </li>
             <li>
-                <img src="./images/лицо3.jpg" alt="Басков" height="260">
+                <img class="team-photos" src="./images/лицо3.jpg" alt="Басков" height="260">
                 <h3 class="features-tittle">Николай Тарасов</h3>
                 <p class="text-team">Marketing</p>
             </li>
             <li>
-                <img src="./images/лицо4.jpg" alt="Мишаня" height="260">
+                <img class="team-photos" src="./images/лицо4.jpg" alt="Мишаня" height="260">
                 <h3 class="features-tittle">Михаил Ермаков</h3>
                 <p class="text-team">UI Designer</p>
             </li>
-        </ul>
+         </ul>
+        </div>
     </section>
     </main>
 

@@ -8,6 +8,8 @@
 
 ul {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 a {
@@ -72,21 +74,36 @@ a {
 }
 
 .section-hero {
+  margin-top: 0;
+  margin-bottom: 94px;
+  text-align: center;
   background-color: #2f303a;
   color: var(--accent-white-color);
 }
 
+.container {
+  width: 1170px;
+  padding-right: 215px;
+  padding-left: 215px;
+  padding-top: 0;
+  padding-bottom: 94px;
+  outline: 2px solid red;
+}
+
 .hero-tittle {
+  margin-top: 0;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
 }
 
 .features-tittle {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -95,6 +112,8 @@ a {
 }
 
 .text {
+  margin-top: 0;
+  margin-bottom: 30px;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
@@ -103,15 +122,14 @@ a {
 }
 
 .button {
+  display: inline-block;
+  padding: 6px 22px;
+  border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--tittle-text-color);
-}
-
-.button {
+  border: 1px solid transparent;
   color: var(--tittle-text-color);
   background-color: var(--backgr-color-botton);
 }
@@ -131,14 +149,28 @@ a {
 }
 
 .button-primary {
+  display: inline-block;
+  padding: 10px 32px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  min-width: 200px;
   background-color: var(--accent-button-color);
   color: var(--accent-white-color);
 }
 
 .team {
+  padding-top: 94px;
+  padding-bottom: 0;
   background-color: var(--backgr-color-botton);
 }
+
+.team-photos {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
 .text-team {
+  margin-top: 0;
+  margin-bottom: 30px;
   font-weight: normal;
   font-size: 16px;
   line-height: 1.18;
@@ -147,6 +179,8 @@ a {
 }
 
 .tittles {
+  margin-top: 0;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
