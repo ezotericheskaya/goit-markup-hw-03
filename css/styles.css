@@ -6,6 +6,27 @@
   --accent-button-color: #2196f3;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+}
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -29,7 +50,19 @@ a {
   text-decoration: none;
 }
 
+.nav-main {
+  display: flex;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
 .web-logo {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--accent-button-color);
   font-family: Raleway;
   font-weight: 700;
@@ -39,6 +72,9 @@ a {
 }
 
 .studio-logo {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: #000000;
   font-family: Raleway;
   font-weight: 700;
@@ -49,13 +85,14 @@ a {
 
 .links {
   display: flex;
+  margin-left: 93px;
+  align-items: center;
 }
 
 .item {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-  border: solid red;
 }
 
 .links .item:not(:last-child) {
@@ -77,10 +114,12 @@ a {
 
 .contacts-nav {
   display: flex;
+  align-items: center;
+  margin-left: auto;
 }
 
-.contacts-nav .item + .item {
-  margin-right: 50px;
+.contacts-nav .item:last-child {
+  margin-left: 50px;
 }
 
 .contacts-nav .contact-link {
@@ -97,8 +136,6 @@ a {
 }
 
 .section-hero {
-  margin-top: 0;
-  margin-bottom: 94px;
   text-align: center;
   background-color: #2f303a;
   color: var(--accent-white-color);
@@ -109,8 +146,6 @@ a {
   align-items: center;
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 0;
-  padding-bottom: 94px;
   margin-left: auto;
   margin-right: auto;
   outline: 2px solid red;
@@ -184,9 +219,7 @@ a {
   color: var(--accent-white-color);
 }
 
-.team {
-  padding-top: 94px;
-  padding-bottom: 0;
+.team-section {
   background-color: var(--backgr-color-botton);
 }
 
@@ -259,4 +292,34 @@ a {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--primery-text-color);
+}
+
+.business-section .container {
+  padding-top: 0;
+  padding-bottom: 94px;
+}
+
+.section-features .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.team-section .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-hero .container {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  display: block;
+}
+
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.items {
+  width: calc((100% - 3 * 30px) / 4);
 }
