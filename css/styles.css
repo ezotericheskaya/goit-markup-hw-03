@@ -47,6 +47,21 @@ a {
   letter-spacing: 0.03em;
 }
 
+.links {
+  display: flex;
+}
+
+.item {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  border: solid red;
+}
+
+.links .item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .links .nav-link {
   font-weight: 500;
   font-size: 14px;
@@ -58,6 +73,14 @@ a {
 .links .nav-link:hover,
 .links .nav-link:focus {
   color: var(--accent-button-color);
+}
+
+.contacts-nav {
+  display: flex;
+}
+
+.contacts-nav .item + .item {
+  margin-right: 50px;
 }
 
 .contacts-nav .contact-link {
@@ -82,11 +105,14 @@ a {
 }
 
 .container {
-  width: 1170px;
-  padding-right: 215px;
-  padding-left: 215px;
+  width: 1200px;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
   padding-top: 0;
   padding-bottom: 94px;
+  margin-left: auto;
+  margin-right: auto;
   outline: 2px solid red;
 }
 
