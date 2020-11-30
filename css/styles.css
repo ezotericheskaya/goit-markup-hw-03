@@ -255,6 +255,8 @@ a {
 }
 
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #2f303a;
 }
 
@@ -268,6 +270,8 @@ a {
 }
 
 .footer-adress {
+  margin-top: 20px;
+  margin-bottom: 0;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -277,6 +281,8 @@ a {
 }
 
 .contacts-footer {
+  margin-top: 9px;
+  margin-bottom: 0;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -361,4 +367,9 @@ a {
   background-color: var(--accent-white-color);
 
   /* outline: 2px solid red; */
+}
+
+.adress {
+  display: flex;
+  flex-direction: column;
 }
