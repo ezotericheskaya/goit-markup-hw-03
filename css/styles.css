@@ -162,6 +162,12 @@ a {
   color: #ffffff;
 }
 
+.section-hero .container {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  display: block;
+}
+
 .features-tittle {
   margin-top: 0;
   margin-bottom: 10px;
@@ -304,15 +310,13 @@ a {
   padding-bottom: 94px;
 }
 
+.items {
+  width: calc((100% - 3 * 30px) / 4);
+}
+
 .team-section .container {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-
-.section-hero .container {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  display: block;
 }
 
 .features-list {
@@ -320,6 +324,17 @@ a {
   flex-wrap: wrap;
 }
 
-.items {
-  width: calc((100% - 3 * 30px) / 4);
+.business-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.b-item {
+  margin-right: 30px;
+  display: list-item;
+}
+
+.b-item:not(:last-child) {
+  margin-right: 30px;
+  display: list-item;
 }
