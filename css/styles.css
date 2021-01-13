@@ -176,6 +176,7 @@ a {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  text-transform: uppercase;
   letter-spacing: 0.03em;
   color: var(--tittle-text-color);
 }
