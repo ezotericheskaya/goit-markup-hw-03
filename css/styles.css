@@ -157,6 +157,7 @@ a {
   width: 696px;
   margin-right: auto;
   margin-left: auto;
+  text-align: center;
 }
 
 .hero-tittle {
@@ -278,7 +279,14 @@ a {
   color: var(--accent-white-color);
 }
 
+.contacts-footer:hover,
+.contacts-footer:focus {
+  color: var(--accent-button-color);
+}
+
 .footer-adress {
+  margin-top: 20px;  
+  margin-bottom: 0;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -286,10 +294,12 @@ a {
   letter-spacing: 0.03em;
   color: var(--accent-white-color);
 }
+.adress-features {
+  margin-top: 9px;
+
+}
 
 .contacts-footer {
-  margin-top: 9px;
-  margin-bottom: 0;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
